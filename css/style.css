@@ -401,3 +401,11 @@ footer{
 }
 
 
+
+.slider{
+    animation:bg-pan-bl 8s both;
+}
+
+@keyframes bg-pan-bl{0%{background-position:100% 0}100%{background-position:0 100%}}
+
+
