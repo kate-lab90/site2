@@ -12,14 +12,27 @@ body{
     margin: 0 auto;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 1200px){
+
+}
+
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 768px){
     .container{
         max-width: 600px;
     }
 
     .service-posts-box{
-        display: block;
+        flex-wrap: wrap;
         margin: 0 auto;
+        padding-top: 5px;
+    }
+    .service-box {
+        padding-bottom: 15px;
     }
 
     .menu{
@@ -66,6 +79,14 @@ body{
     position: absolute;
     top: 12px;
     left: 25px;
+}
+
+.logo-text:hover{
+    animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both
+}
+
+@keyframes tracking-in-expand{
+    0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}
 }
 
 .form-search {
@@ -151,6 +172,12 @@ nav :first-child{
     bottom: 0;
     background-color: rgba(49, 45, 45, 0.5);
 }
+
+.slider{
+    animation:bg-pan-bl 8s both;
+}
+
+@keyframes bg-pan-bl{0%{background-position:100% 0}100%{background-position:0 100%}}
 
 .slider-text {
     position: absolute;
@@ -245,6 +272,11 @@ nav :first-child{
     background-size: contain;
     padding: 1px;
 }
+
+.about-info-foto:hover {
+    animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
 
 .about-info-text {
     font-weight: 400;
@@ -392,20 +424,3 @@ footer{
     justify-content: center;
     margin-top: 3px;
 }
-.logo-text:hover{
-    animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both
-}
-
-@keyframes tracking-in-expand{
-    0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}
-}
-
-
-
-.slider{
-    animation:bg-pan-bl 8s both;
-}
-
-@keyframes bg-pan-bl{0%{background-position:100% 0}100%{background-position:0 100%}}
-
-
