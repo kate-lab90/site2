@@ -12,14 +12,27 @@ body{
     margin: 0 auto;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 1200px){
+
+}
+
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 768px){
     .container{
         max-width: 600px;
     }
 
     .service-posts-box{
-        display: block;
+        flex-wrap: wrap;
         margin: 0 auto;
+        padding-top: 5px;
+    }
+    .service-box {
+        padding-bottom: 15px;
     }
 
     .menu{
