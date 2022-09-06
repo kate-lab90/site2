@@ -329,6 +329,30 @@ nav :first-child{
     text-decoration: underline;
 }
 
+
+.video-audio-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.audio-box{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.audio-box p{
+    text-align: justify;
+}
+
+
+.audio-box audio{
+    margin-top: 10px;
+}
+
 .resent-posts-box{
     display: flex;
 }
