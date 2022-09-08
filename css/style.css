@@ -21,9 +21,80 @@ body{
 
 }
 
-@media screen and (max-width: 768px){
-    .container{
-        max-width: 600px;
+@media screen and (max-width: 767px){
+
+    .content {
+        margin: 0 15px;
+    }
+    
+    .header-flex{
+        margin-bottom: 10px;
+    }
+
+    .logo-left {
+        flex: 0 0 40px;
+      }
+
+    .menu-burger{
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin-top: 10px;
+        float: right;
+    }
+
+    .menu-burger span{
+        position: absolute;
+        background-color: #9B51E0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+    .menu-burger:before,
+    .menu-burger:after{
+        content: '';
+        background-color: #9B51E0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .menu-burger:before{
+        top: 0;
+    }
+
+    .menu-burger:after{
+        bottom: 0;
+    }
+
+    .is-active{
+        display: block;
+    }
+    nav{
+        display: none;
+        top: 12px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        flex-direction: column;
+        height: 50px;
+        align-items: flex-end;
+        position: relative;
+
+    }
+
+    nav a{
+        line-height: 10px;
+    }
+
+    .slider {
+       margin-top: 50px;
     }
 
     .service-posts-box{
@@ -31,13 +102,14 @@ body{
         margin: 0 auto;
         padding-top: 5px;
     }
+
     .service-box {
         padding-bottom: 15px;
     }
-
+/*
     .menu{
         font-size: 10px;
-    }
+    } */
 }
 
 .progress{
@@ -115,6 +187,10 @@ body{
     position: absolute;
 }
 
+/*.menu-burger{
+    display: none;
+}*/
+
 .menu{
     display: flex;
     justify-content: center;
@@ -143,6 +219,10 @@ nav :first-child{
 .menu a:hover{
     background: #FFC740;
     color: #FFFFFF;
+}
+
+.box{
+    display: none;
 }
 
 .slider{
