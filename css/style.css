@@ -103,13 +103,37 @@ body{
         padding-top: 5px;
     }
 
+    .slider-text .slider-text-heading {
+        font-size: 26px;
+    }
+
+    .slider-text .slider-p {
+        font-size: 12px;
+    }
+
+    .video-audio-box{
+        flex-wrap: wrap;
+    }
+
+    .slider-p-btn .slider-read-more{
+        font-size: 12px;
+        width: 103px;
+        height: 23px;
+    }
+
     .service-box {
         padding-bottom: 15px;
     }
-/*
-    .menu{
-        font-size: 10px;
-    } */
+
+    /*.clients-logo{
+        flex-wrap: wrap;
+    }*/
+
+    .clients-logo img{
+        width: 41px;
+        height: 30px;
+    }
+
 }
 
 .progress{
@@ -221,9 +245,9 @@ nav :first-child{
     color: #FFFFFF;
 }
 
-.box{
+/*.box{
     display: none;
-}
+}*/
 
 .slider{
     height: 362px;
@@ -247,7 +271,7 @@ nav :first-child{
 
 .slider-text {
     position: absolute;
-    width: 509px;
+    max-width: 509px;
     height: 150px;
     margin-left: 44px;
     margin-top: 10px;
@@ -262,7 +286,7 @@ nav :first-child{
 
 .slider-p-btn {
     height: 133px;
-    width: 451px;
+    max-width: 451px;
 }
 
 .slider-p{
