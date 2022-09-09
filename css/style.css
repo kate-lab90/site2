@@ -26,14 +26,18 @@ body{
     .content {
         margin: 0 15px;
     }
-    
-    .header-flex{
-        margin-bottom: 10px;
+
+    header .header-flex{
+        display: block;
+        margin-bottom: 25px;
+
     }
 
-    .logo-left {
-        flex: 0 0 40px;
-      }
+    .header-box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
 
     .menu-burger{
         display: block;
@@ -74,23 +78,18 @@ body{
     .is-active{
         display: block;
     }
-    nav{
-        display: none;
-        top: 12px;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        margin-top: 16px;
-        margin-bottom: 16px;
+    .content nav{
+        /*display: none;*/
+        top: 25px;
         flex-direction: column;
         height: 50px;
         align-items: flex-end;
         position: relative;
-
     }
 
-    nav a{
-        line-height: 10px;
+    .content nav a{
+        font-size: 10px;
+        justify-content: flex-end;
     }
 
     .slider {
@@ -109,6 +108,10 @@ body{
 
     .slider-text .slider-p {
         font-size: 12px;
+    }
+
+    .about-us .about-worker {
+        margin-bottom: 70px;
     }
 
     .video-audio-box{
@@ -244,10 +247,6 @@ nav :first-child{
     background: #FFC740;
     color: #FFFFFF;
 }
-
-/*.box{
-    display: none;
-}*/
 
 .slider{
     height: 362px;
@@ -437,6 +436,7 @@ nav :first-child{
 .video-audio-box{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px;
