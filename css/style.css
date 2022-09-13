@@ -57,7 +57,7 @@ body{
         top: 9px;
     }
 
-    .menu-burger:before,
+    .menu-burger:before,.about-heading-wrapper
     .menu-burger:after{
         content: '';
         background-color: #9B51E0;
@@ -75,16 +75,17 @@ body{
         bottom: 0;
     }
 
-    .is-active{
-        display: block;
-    }
     .content nav{
-        /*display: none;*/
+        display: none;
         top: 25px;
         flex-direction: column;
         height: 50px;
         align-items: flex-end;
         position: relative;
+    }
+
+    .content .is-active{
+        display: block;
     }
 
     .content nav a{
@@ -99,19 +100,32 @@ body{
     .service-posts-box{
         flex-wrap: wrap;
         margin: 0 auto;
-        padding-top: 5px;
+        margin-bottom: 15px;
     }
 
-    .slider-text .slider-text-heading {
-        font-size: 26px;
+    .slider-text{
+        margin-right: 40px;
+    }
+
+
+        .slider-text .slider-text-heading {
+            font-size: 26px;
+            line-height: 26px;
+            margin-bottom: 30px;
+            margin-top: 68px;
+
+
+
+
     }
 
     .slider-text .slider-p {
         font-size: 12px;
+        text-align: justify;
     }
 
     .about-us .about-worker {
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
 
     .video-audio-box{
@@ -128,6 +142,10 @@ body{
         padding-bottom: 15px;
     }
 
+    .about-heading-wrapper .about-heading{
+        margin-right: 200px;
+    }
+
     /*.clients-logo{
         flex-wrap: wrap;
     }*/
@@ -135,6 +153,10 @@ body{
     .clients-logo img{
         width: 41px;
         height: 30px;
+    }
+
+    .is-active{
+        display: block;
     }
 
 }
