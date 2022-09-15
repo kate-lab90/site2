@@ -28,18 +28,20 @@ body{
     }
 
     header .header-flex{
-        display: block;
-        margin-bottom: 25px;
 
     }
 
-    .header-box{
+    .header-flex .form-search{
+        top: 57px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
     }
 
-    .menu-burger{
+    .form-search .input-search{
+        width: 100%;
+    }
+
+    .header-flex .menu-burger{
         display: block;
         width: 30px;
         height: 20px;
@@ -79,21 +81,20 @@ body{
         display: block;
     }
     .content nav{
-        /*display: none;*/
+        display: block;
+        margin-top: 7px;
+/*        !*display: none;*!
         top: 25px;
         flex-direction: column;
         height: 50px;
         align-items: flex-end;
-        position: relative;
+        position: relative;*/
     }
 
     .content nav a{
-        font-size: 10px;
-        justify-content: flex-end;
-    }
-
-    .slider {
-       margin-top: 50px;
+        font-size: 14px;
+        width: 100%;
+        height: 27px;
     }
 
     .service-posts-box{
@@ -102,16 +103,28 @@ body{
         padding-top: 5px;
     }
 
+    .slider .slider-text{
+        margin-right: 44px;
+        margin-top: 53px;
+    }
+
     .slider-text .slider-text-heading {
         font-size: 26px;
+        line-height: 40px;
     }
 
     .slider-text .slider-p {
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
-    .about-us .about-worker {
+    .articles-wrapper .article {
         margin-bottom: 70px;
+        margin-top: 40px;
+    }
+
+    .article .about-heading{
+        margin-right: 141px;
     }
 
     .video-audio-box{
@@ -139,7 +152,7 @@ body{
 
 }
 
-.progress{
+.header-line{
     content: "";
     height: 5px;
     background-color: #9B51E0;
@@ -167,8 +180,7 @@ body{
 }
 
 .logo-text{
-    width: 143px;
-    height: 29px;
+    width: 151px;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -176,7 +188,7 @@ body{
     color: #000000;
     background-color: #FFFFFF;
     position: absolute;
-    top: 12px;
+    top: 25px;
     left: 25px;
 }
 
@@ -186,10 +198,13 @@ body{
     height: 33px;
     background: #FFFFFF;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .input-search{
-    width: 201px;
+    width: 170px;
     height: 33px;
     border: 1px solid #6D3D99;
     background-color: #FFFFFF;
@@ -201,7 +216,7 @@ body{
 
 .button-submit{
     width: 42px;
-    height: 31px;
+    height: 33px;
     left: 159px;
     bottom: 1px;
     background-color: #9B51E0;
@@ -209,14 +224,12 @@ body{
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    padding: 0;
     border: 0;
-    position: absolute;
 }
 
-/*.menu-burger{
+.menu-burger{
     display: none;
-}*/
+}
 
 .menu{
     display: flex;
@@ -311,14 +324,14 @@ nav :first-child{
     margin-top: 12px;
 }
 
-.about-us{
+.articles-wrapper{
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.about-worker {
+.article {
     text-align: justify;
     margin-left: 11px;
     margin-bottom: 33px;
@@ -509,6 +522,20 @@ nav :first-child{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 13px;
+}
+
+.logo-wrap{
+    max-width: 208px;
+    max-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrap img{
+    width: 100%;
+    height: 100%;
 }
 
 .wrapper{
