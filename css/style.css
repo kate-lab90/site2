@@ -34,7 +34,8 @@ body{
     .header-flex .form-search{
         top: 57px;
         width: 100%;
-        display: flex;
+        /*display: flex;*/
+        display: none;
     }
 
     .form-search .input-search{
@@ -80,8 +81,13 @@ body{
     .is-active{
         display: block;
     }
-    .content nav{
+
+    .is-active-search{
         display: block;
+    }
+
+    .content nav{
+        display: none;
         margin-top: 7px;
 /*        !*display: none;*!
         top: 25px;

@@ -1,4 +1,4 @@
 document.querySelector('.menu-burger').addEventListener('cklick', function (e) {
-  e.preventDefault();
-  document.querySelector('nav').innerHTML.toggle('is-active');
+  document.querySelector('nav').classList.toggle('is-active');
+  document.querySelector('.form-search').classList.toggle('is-active-search');
 });
