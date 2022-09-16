@@ -123,10 +123,6 @@ body{
         margin-top: 40px;
     }
 
-    .article .about-heading{
-        margin-right: 141px;
-    }
-
     .video-audio-box{
         flex-wrap: wrap;
     }
@@ -137,8 +133,9 @@ body{
         height: 23px;
     }
 
-    .service-box {
+    .service-posts-box .service-box {
         padding-bottom: 15px;
+        flex-basis: 100%;
     }
 
     /*.clients-logo{
@@ -340,10 +337,7 @@ nav :first-child{
 }
 
 .about-heading-wrapper{
-    display: block;
-    content: "";
-    background-color: #9B51E0;
-    /*width: 460px;*/
+    display: flex;
     height: 16px;
 }
 
@@ -353,13 +347,12 @@ nav :first-child{
     line-height: 16px;
     color: #000000;
     background-color: #FFFFFF;
-    margin-left: 16px;
-    margin-right: 275px;
-    padding-left: 4px;
+    padding: 0 5px 0 5px;
+    min-width: 152px;
 }
 
-.yelow-line{
-    background-color: #FFC740;
+.about-super-logo{
+    min-width: 130px;
 }
 
 .about-info{
@@ -403,7 +396,7 @@ nav :first-child{
 }
 
 .service-box{
-    width: 301px;
+    flex-basis: 32%;
 }
 
 .service-heading{
@@ -413,11 +406,21 @@ nav :first-child{
 }
 
 .service-box-wrapper {
-    display: block;
-    content: "";
-    background-color: #FFC740;
+    display: flex;
     height: 16px;
-    margin-bottom: 16px;
+}
+
+.service-box-line-left{
+    background-color: #FFC740;
+    content: '';
+    min-width: 16px;
+    height: 16px;
+}
+
+.service-box-line-right{
+    background-color: #FFC740;
+    content: '';
+    width: 100%;
 }
 
 .service-box-heading{
@@ -425,9 +428,12 @@ nav :first-child{
     font-size: 14px;
     line-height: 16px;
     background-color: #FFFFFF;
-    margin-left: 16px;
-    margin-right: 212px;
-    padding-left: 4px;
+    padding: 0 5px 0 5px;
+    box-sizing: border-box;
+}
+
+.resent-posts{
+    min-width: 108px;
 }
 
 .service-box-info-text-box{
@@ -435,6 +441,7 @@ nav :first-child{
     font-size: 12px;
     line-height: 14px;
     text-align: justify;
+    margin-top: 17px;
 }
 
 .service-box-info-text{
@@ -485,10 +492,6 @@ nav :first-child{
 
 .violet-line{
     background-color: #9B51E0;
-}
-
-.violet-line h3{
-    margin-right: 179px;
 }
 
 .resent-posts-box img{
